@@ -1,6 +1,6 @@
 # SpotifyPlaylistNumberOfSongs
 
-A MobileSubstrate tweak for Spotify to show amount of songs in playlist.
+A MobileSubstrate tweak for Spotify to show amount of songs in a playlist.
 
 ## Screenshot
 

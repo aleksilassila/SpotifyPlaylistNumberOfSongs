@@ -1,5 +1,7 @@
 # SpotifyPlaylistNumberOfSongs
 
-Show amount of songs in playlist in Spotify.
+A MobileSubstrate tweak for Spotify to show amount of songs in playlist.
+
+## Screenshot
 
 ![Alt text](/screenshot.jpg?raw=true "Total duration • Songs")

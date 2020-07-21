@@ -14,10 +14,22 @@ NSString *metadataText = @"";
 
 %end
 
+%hook VISREFFullBleedContentView
+
+- (void)setMetadataText:(id)arg1 withAccessibilityLabel:(id)arg2 {
+    %orig;
+
+    id durationLabel = MSHookIvar<id>(self, "_metadataLabel");
+    [durationLabel setText:[NSString stringWithFormat: @"%@ • %llu Songs", metadataText, tracks]];
+}
+
+%end
+
 %hook SPTFreeTierPlaylistViewModelImplementation
 
 - (void)updateHeaderProperties {
     %orig;
+
     tracks = self.itemsViewModel.numberOfItems;
     metadataText = self.metadataText;
 }

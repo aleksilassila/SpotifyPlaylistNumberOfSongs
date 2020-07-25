@@ -1,8 +1,8 @@
 Package: com.aleksilassila.spotifyplaylistnumberofsongs
 Name: SpotifyPlaylistNumberOfSongs
-Version: 0.0.2
+Version: 0.0.3
 Architecture: iphoneos-arm
-Description: Show amount of songs in playlist.
+Description: Show amount of songs in a playlist.
 Maintainer: Aleksi Lassila
 Author: Aleksi Lassila
 Section: Tweaks

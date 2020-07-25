@@ -19,8 +19,10 @@ NSString *metadataText = @"";
 - (void)setMetadataText:(id)arg1 withAccessibilityLabel:(id)arg2 {
     %orig;
 
-    id durationLabel = MSHookIvar<id>(self, "_metadataLabel");
-    [durationLabel setText:[NSString stringWithFormat: @"%@ • %llu Songs", metadataText, tracks]];
+    if (arg2 != nil) {
+        id durationLabel = MSHookIvar<id>(self, "_metadataLabel");
+        [durationLabel setText:[NSString stringWithFormat: @"%@ • %llu Songs", metadataText, tracks]];
+    }
 }
 
 %end

@@ -1,4 +1,4 @@
-Package: com.aleksilassila.spotifyplaylistnumberofsongs
+Package: me.aleksilassila.spotifyplaylistnumberofsongs
 Name: SpotifyPlaylistNumberOfSongs
 Version: 0.0.3
 Architecture: iphoneos-arm
